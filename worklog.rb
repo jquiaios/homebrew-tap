@@ -5,21 +5,21 @@
 class Worklog < Formula
   desc "Fast CLI + TUI for logging work highlights and lowlights"
   homepage "https://github.com/jquiaios/worklog"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jquiaios/worklog/releases/download/v1.1.0/worklog_1.1.0_darwin_amd64.tar.gz"
-      sha256 "74563860acf1b99f31a4d47737dd7501147cbb4cdeb470cc4ccdc47917311bd6"
+      url "https://github.com/jquiaios/worklog/releases/download/v1.1.1/worklog_1.1.1_darwin_amd64.tar.gz"
+      sha256 "8eda48a9c833b95d3da2741ee3add916088ae38d8166e6878c6914fa1e9c1920"
 
       define_method(:install) do
         bin.install "worklog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jquiaios/worklog/releases/download/v1.1.0/worklog_1.1.0_darwin_arm64.tar.gz"
-      sha256 "cb7fdd3af80a147a5201b30b8705ab2ef3b31832a705c3120ec7fdf99e1ff0a2"
+      url "https://github.com/jquiaios/worklog/releases/download/v1.1.1/worklog_1.1.1_darwin_arm64.tar.gz"
+      sha256 "fe9742575ccf6ebbb1d3a98bbdcb5f7298e9c1c0f0601ab70f7a6c2fb9fa7988"
 
       define_method(:install) do
         bin.install "worklog"
@@ -29,15 +29,15 @@ class Worklog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jquiaios/worklog/releases/download/v1.1.0/worklog_1.1.0_linux_amd64.tar.gz"
-      sha256 "b90695e2aa04dec73a38f7f949e5d2602a799c0cf381ba612c28d1a926a79f69"
+      url "https://github.com/jquiaios/worklog/releases/download/v1.1.1/worklog_1.1.1_linux_amd64.tar.gz"
+      sha256 "8baf6529512d8740616a9f785dc28ccf1a8706f388959113558710b23381bba6"
       define_method(:install) do
         bin.install "worklog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jquiaios/worklog/releases/download/v1.1.0/worklog_1.1.0_linux_arm64.tar.gz"
-      sha256 "d0765ed427520b8a6de842d0ee8c4efd6d7dc246690d42b13388786a9c71e047"
+      url "https://github.com/jquiaios/worklog/releases/download/v1.1.1/worklog_1.1.1_linux_arm64.tar.gz"
+      sha256 "3a02665658c2d55c17d89f0529e88729ebd9d031e4a2de7303ec4c8a515f585b"
       define_method(:install) do
         bin.install "worklog"
       end
